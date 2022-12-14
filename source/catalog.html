@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo" href="#">
+        <img src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка.">
+      </a>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <nav class="main-header__navigation main-navigation">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="catalog">
+            <div class="catalog__title-wrapper">
+              <h1 class="catalog__title">Каталог товаров</h1>
+            </div>
+            <div class="catalog-card">
+                <ul class="catalog-card__list">
+                    <li class="catalog-card__item  catalog-item">
+                        <div class="catalog-item__picture">
+                            <img src="./img/bunny.svg" width="260" height="195" alt="Зайчик-попрыгайчик.">
+                        </div>
+                        <div class="catalog-item__card">
+                            <a class="catalog-item__link" href="#">Зайчик-попрыгайчик</a>
+                            <span class="catalog-item__description">Рост 30 см, вес 200 г</span>
+                        </div>
+                        <div class="catalog-item__price">
+                            <a class="catalog-item__link" href="#">1200 руб.</a>
+                        </div>
+                    </li>
+                    <li class="catalog-card__item  catalog-item">
+                        <div class="catalog-item__picture">
+                            <img src="./img/basket.svg" width="260" height="195" alt="Корзинка для белья.">
+                        </div>
+                        <div class="catalog-item__card">
+                            <a class="catalog-item__link" href="#">Корзинка для белья</a>
+                            <span class="catalog-item__description">Диаметр 15 см, высота 10 см</span>
+                        </div>
+                        <div class="catalog-item__price">
+                            <a class="catalog-item__link" href="#">690 руб.</a>
+                        </div>
+                    </li>
+                    <li class="catalog-card__item  catalog-item">
+                        <div class="catalog-item__picture">
+                            <img src="./img/big-basket.svg" width="260" height="195" alt="Большая корзинка для игрушек.">
+                        </div>
+                        <div class="catalog-item__card">
+                            <a class="catalog-item__link" href="#">Большая корзинка для игрушек</a>
+                            <span class="catalog-item__description">Диаметр 30 см, высота 30 см</span>
+                        </div>
+                        <div class="catalog-item__price">
+                            <a class="catalog-item__link" href="#">1500 руб.</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </section>
+          <section class="production">
+            <div class="production__wrapper">
+                <h2 class="production__title">Процесс производства</h2>
+                <div class="production__video">
+                    <img src="./img/video.svg" width="260" height="150" alt="Процесс производства.">
+                </div>
+                <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+                <a class="production__link" href="#">Сделать заказ</a>
+            </div>
+          </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__logo"></div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">YouTube.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegramm.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright">
+        <a class="main-footer__copyright-link" href="#">
+          <span>Разработано</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

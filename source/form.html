@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo" href="#">
+        <img src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип компании Мишка." />
+      </a>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <nav class="main-header__navigation main-navigation">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="form">
+            <div class="form__title-wrapper">
+                <h1 class="form__title">Вязание на заказ</h1>
+            </div>
+            <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <form action="#" method="post">
+            <fieldset class="form__field">
+                <div class="form__field-wrapper">
+                <h2 class="form__field-title">Тип</h2>
+                <ul class="form__field-list">
+                    <li class="form__field-item  field-radio">
+                        <input class="field-radio__input  visually-hidden" type="radio" id="accessory" name="type" value="accessory" checked>
+                        <label class="field-radio__label" for="accessory">Аксессуар для интерьера</label>
+                    </li>
+                    <li class="form__field-item  field-radio">
+                        <input class="field-radio__input  visually-hidden" type="radio" id="toy" name="type" value="toy">
+                        <label class="field-radio__label" for="toy">Детская игрушка</label>
+                    </li>
+                </ul>
+                </div>
+            </fieldset>
+            <fieldset class="form__field  form__field--color">
+                <div class="form__field-wrapper">
+                    <h2 class="form__field-title">Цвет</h2>
+                    <ul class="form__field-list">
+                        <li class="form__field-item  field-checkbox">
+                            <input class="field-checkbox__input  visually-hidden" type="checkbox" id="color-white" name="color-white" checked>
+                            <label class="field-checkbox__label" for="color-white">Белый</label>
+                        </li>
+                        <li class="form__field-item  field-checkbox">
+                            <input class="field-checkbox__input  visually-hidden" type="checkbox" id="color-grey" name="color-grey" checked>
+                            <label class="field-checkbox__label" for="color-grey">Серый</label>
+                        </li>
+                        <li class="form__field-item  field-checkbox">
+                            <input class="field-checkbox__input  visually-hidden" type="checkbox" id="color-tiffany" name="color-tiffany">
+                            <label class="field-checkbox__label" for="color-tiffany">Тиффани</label>
+                        </li>
+                        <li class="form__field-item  field-checkbox">
+                            <input class="field-checkbox__input  visually-hidden" type="checkbox" id="color-black" name="color-black">
+                            <label class="field-checkbox__label" for="color-black">Черный</label>
+                        </li>
+                        <li class="form__field-item  field-checkbox">
+                            <input class="field-checkbox__input  visually-hidden" type="checkbox" id="color-pink" name="color-pink">
+                            <label class="field-checkbox__label" for="color-pink">Розовый</label>
+                        </li>
+                        <li class="form__field-item  field-checkbox">
+                            <input class="field-checkbox__input  visually-hidden" type="checkbox" id="color-orange" name="color-orange">
+                            <label class="field-checkbox__label" for="color-orange">Оранжевый</label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset class="form__field">
+                <div class="form__field-wrapper">
+                    <h2 class="form__field-title">Фио</h2>
+                    <ul class="form__field-list">
+                        <li class="form__field-item  field-text">
+                            <label class="field-text__label" for="name">Имя:</label>
+                            <input class="field-text__input" type="text" id="name" placeholder="Введите ваше имя*" required>
+                        </li>
+                        <li class="form__field-item  field-text">
+                            <label class="field-text__label" for="surname">Фамилия:</label>
+                            <input class="field-text__input" type="text" id="surname" placeholder="Укажите фамилию*" required>
+                        </li>
+                        <li class="form__field-item  field-text">
+                            <label class="field-text__label" for="patronymic">Отчество:</label>
+                            <input class="field-text__input" type="text" id="patronymic" placeholder="Отчество, если желаете">
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset class="form__field  form__field--contacts">
+                <div class="form__field-wrapper">
+                    <h2 class="form__field-title">Тел</h2>
+                    <div class="form__field-item  field-text">
+                        <label class="field-text__label" for="phone"></label>
+                        <input class="field-text__input" type="tel" id="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
+                    </div>
+                    <h2 class="form__field-title">e-mail</h2>
+                    <div class="form__field-item  field-text  field-text--email">
+                        <label class="field-text__label" for="email"></label>
+                        <input class="field-text__input" type="email" id="email" placeholder="Ваш Email*" required>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form__field">
+                <div class="form__field-wrapper">
+                <h2 class="form__field-title">Доп</h2>
+                <p class="form__field-item  field-text">
+                    <label class="field-text__label" for="wishes"></label>
+                    <textarea class="field-text__input" name="wishes" id="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                </p>
+                </div>
+            </fieldset>
+            <div class="notice">
+                <span class="notice__text">*Поля обязательны для заполнения</span>
+            </div>
+            <div class="form-button">
+                <button class="form-button__button" type="submit">Отправить заказ</button>
+            </div>
+            </form>
+        </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__logo"></div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">YouTube.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegramm.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright">
+        <a class="main-footer__copyright-link" href="#">
+          <span>Разработано</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
