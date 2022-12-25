@@ -1,0 +1,33 @@
+.hero {
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  width: 567px;
+  height: 373px;
+}
+
+.hero__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+
+.hero__list-item {
+  &--interior {
+    background-color: #63d1bb;
+  } ;
+  &--toys {
+    background-color: #56c3b2;
+  }
+}
+
