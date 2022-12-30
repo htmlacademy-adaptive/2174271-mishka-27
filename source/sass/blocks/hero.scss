@@ -1,22 +1,22 @@
 .hero {
-  background-image: url("../img/hero-mobile.jpg");
-  background-repeat: no-repeat;
-  background-color: #fafafa;
   width: 567px;
   height: 373px;
+
+  background-color: #fafafa;
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
 }
 
 .hero__title {
-  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-
-  display: flex;
-  align-items: center;
+  font-family: "PT Sans Bold";
   text-align: center;
-
   color: #000000;
 
   mix-blend-mode: normal;
@@ -29,4 +29,20 @@
   &--toys {
     background-color: #56c3b2;
   }
+}
+
+.hero__link {
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  text-decoration: none;
 }

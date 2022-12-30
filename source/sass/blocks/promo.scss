@@ -1,0 +1,96 @@
+.promo__title {
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+
+.promo__subtitle {
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #63d1bb;
+
+  mix-blend-mode: normal;
+}
+
+.promo__text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+
+  color: #444444;
+
+  mix-blend-mode: normal;
+}
+
+.promo__description-item {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+
+  color: #444444;
+
+  mix-blend-mode: normal;
+}
+
+.promo__price {
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #444444;
+
+  mix-blend-mode: normal;
+  }
+
+.promo__link {
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #444444;
+
+  mix-blend-mode: normal;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+}

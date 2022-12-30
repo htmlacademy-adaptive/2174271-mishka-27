@@ -1,0 +1,61 @@
+.contacts__title {
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+
+.contacts__subtitle {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  color: #444444;
+
+  mix-blend-mode: normal;
+}
+
+.contacts__email-link {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  color: #444444;
+
+  mix-blend-mode: normal;
+  text-decoration: underline;
+  text-decoration-color: #62d1ba;
+}
+
+.contacts__address {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  color: #444444;
+
+  mix-blend-mode: normal;
+}

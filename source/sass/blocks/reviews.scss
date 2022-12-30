@@ -1,0 +1,79 @@
+.reviews__content-title {
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+
+.reviews__content-text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  color: #444444;
+
+  mix-blend-mode: normal;
+}
+
+.reviews__author-name {
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+
+.reviews__author-nickname {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+
+.reviews__link {
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #444444;
+
+  mix-blend-mode: normal;
+  text-decoration: none;
+  border: 2px solid #444444
+}
