@@ -5,11 +5,16 @@
   font-size: 27px;
   line-height: 30px;
 
-  display: flex;
+  display: block;
   align-items: center;
   text-align: center;
 
   color: #000000;
 
   mix-blend-mode: normal;
+  }
+
+  .catalog__title-wrapper {
+    padding: 73px 30px;
+    background-color: #f1f1f1;;
   }
