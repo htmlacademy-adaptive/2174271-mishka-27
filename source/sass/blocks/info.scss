@@ -1,29 +1,55 @@
+.info__wrapper {
+  padding: 0 30px;
+}
+
 .info__title {
-  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-
-  display: flex;
-  align-items: center;
-
+  font-family: "Open Sans";
   color: #000000;
 
   mix-blend-mode: normal;
-  }
+}
 
 .info__item {
-  font-family: "Open Sans";
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 83px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-
-  display: flex;
-  align-items: center;
-
+  font-family: "Open Sans";
   color: #000000;
 
   mix-blend-mode: normal;
+}
+
+.info__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: 321px) {
+    min-width: 260px;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+    max-width: 700px;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr 1fr;
+  }
 }

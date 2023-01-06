@@ -1,96 +1,112 @@
+.promo {
+  margin: 0 auto;
+  padding: 0 30px;
+
+  background-color: #ffffff;
+}
+
 .promo__title {
-  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+  margin: 0;
+
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-
-  display: flex;
-  align-items: center;
-
+  font-family: "Open Sans";
   color: #000000;
 
   mix-blend-mode: normal;
 }
 
 .promo__subtitle {
-  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+  margin: 0;
+
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-
+  font-family: "Open Sans";
   color: #63d1bb;
+  text-transform: uppercase;
 
   mix-blend-mode: normal;
 }
 
 .promo__text {
-  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-
-  display: flex;
-  align-items: center;
-
+  font-family: "Open Sans";
   color: #444444;
 
   mix-blend-mode: normal;
 }
 
+.promo__description-list {
+  margin: 0 0 28px 0;
+  padding: 0;
+}
+
 .promo__description-item {
-  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+  width: 100%;
+
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-
-  display: flex;
-  align-items: center;
-
+  font-family: "Open Sans";
   color: #444444;
+
+  border-bottom: 1px solid #ececec;
 
   mix-blend-mode: normal;
 }
 
+.promo__description-term,
+.promo__description-definition {
+  padding: 12px 0 12px 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 .promo__price {
-  font-family: "Open Sans";
+  display: block;
+  align-items: center;
+
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-
-  display: flex;
-  align-items: center;
+  font-family: "Open Sans";
   text-align: center;
-
   color: #444444;
 
   mix-blend-mode: normal;
-  }
+}
+
+.promo__img {
+  display: block;
+  margin: 0 auto;
+}
 
 .promo__link {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-
-  display: flex;
+  display: block;
   align-items: center;
-  text-align: center;
-  text-transform: uppercase;
+  padding: 16px;
+  margin: 24px 30px;
 
-  color: #444444;
-
-  mix-blend-mode: normal;
-  text-decoration: none;
-  background-color: #ffffff;
-  border: 2px solid #444444;
+  font-family: "Open Sans";
 }

@@ -1,3 +1,9 @@
+.contacts__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 .contacts__title {
   font-family: "Open Sans";
   font-style: normal;
@@ -11,6 +17,7 @@
   color: #000000;
 
   mix-blend-mode: normal;
+  margin: 0 0 28px 0;
 }
 
 .contacts__subtitle {
@@ -52,10 +59,17 @@
   font-size: 14px;
   line-height: 30px;
 
-  display: flex;
   align-items: center;
 
   color: #444444;
 
   mix-blend-mode: normal;
+}
+
+.contacts__container-mail {
+  display: flex;
+}
+
+.contacts__container-address {
+  display: flex;
 }
