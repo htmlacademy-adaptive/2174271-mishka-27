@@ -24,27 +24,27 @@
 }
 
 .main-footer__copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80px;
-    padding: 23px 7.5%;
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 18px;
-    color: inherit;
-    text-decoration: none;
-    gap: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  padding: 23px 7.5%;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: inherit;
+  text-decoration: none;
+  gap: 27px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 30px;
-      left: 30px;
-      height: 1px;
-      background-color: #e5e5e5e5;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    left: 30px;
+    height: 1px;
+    background-color: #e5e5e5e5;
+  }
 }
 
 
