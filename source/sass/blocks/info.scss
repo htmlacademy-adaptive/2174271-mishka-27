@@ -2,6 +2,12 @@
   padding: 0 30px;
 }
 
+@media (min-width: 768px) {
+  .info__wrapper {
+    padding: 55px 50px 83px;
+  }
+}
+
 .info__title {
   display: flex;
   align-items: center;

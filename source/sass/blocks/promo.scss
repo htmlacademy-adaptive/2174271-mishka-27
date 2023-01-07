@@ -9,6 +9,8 @@
   .promo {
     display: grid;
     padding: 52px 50px 69px;
+    grid-template-columns: 2fr 1fr;
+
 
 
     column-gap: 42px;
@@ -23,6 +25,7 @@
     margin-bottom: 50px;
     display: grid;
     position: relative;
+    grid-column: 1/3;
   }
 }
 
