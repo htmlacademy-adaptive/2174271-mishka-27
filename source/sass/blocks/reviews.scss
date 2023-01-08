@@ -27,15 +27,6 @@
   mix-blend-mode: normal;
 }
 
-.reviews__container-title {}
-
-@media (min-width: 768px) {
-  .reviews__container-title {
-  }
-
-}
-
-
 .reviews__content-text {
   font-family: "Open Sans";
   font-style: normal;
@@ -51,8 +42,10 @@
   mix-blend-mode: normal;
 }
 
+.reviews__container-text {}
+
 @media (min-width: 768px) {
-  .reviews__content-text  {
+  .reviews__container-text  {
     grid-column-start: 1;
     grid-column-end: 3;
   }
