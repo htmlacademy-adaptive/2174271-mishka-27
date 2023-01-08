@@ -1,0 +1,281 @@
+.main-navigation__user-link {
+  display: flex;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Open Sans";
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-navigation__site-link {
+  display: flex;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Open Sans";
+  color: #000000;
+  text-decoration: none;
+}
+
+
+.main-navigation__site-item {
+  padding: 27px 30px 27px 76px;
+
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: 768px) {
+  .main-navigation__site-item {
+    padding: 20px 37px 0 0;
+
+    border: none;
+  }
+}
+
+
+.main-navigation__user-item {
+  padding: 27px 30px 27px 76px;
+
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: 768px) {
+  .main-navigation__user-item {
+    border: 0;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .nav-search {
+    padding: 36px 31px 28px 33px;
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+  }
+}
+
+
+.main-navigation__site-link {
+  display: block;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.main-navigation__user-link {
+  display: block;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-navigation {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-top: 80px;
+
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .main-navigation {
+    padding-top: 0;
+
+    background-color: #f2f2f2;
+  }
+}
+
+
+.main-navigation__wrapper {
+  display: grid;
+
+  grid-template-areas: "site-nav"
+  "user-nav";
+}
+
+@media (min-width: 768px) {
+  .main-navigation__wrapper {
+    padding: 0 30px;
+
+    grid-template-areas: "user-nav user-nav"
+    "site-nav delivery-text";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-navigation__wrapper {
+    padding: 0;
+
+    grid-template-areas: "site-nav user-nav"
+    "news-nav delivery-text";
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .main-header__toggle-button--closed {
+    display: none;
+  }
+}
+
+.main-navigation__site-nav {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  grid-area: site-nav;
+}
+
+@media (min-width: 768px) {
+  .main-navigation__site-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-navigation__site-nav {
+    padding-right: 100px;
+  }
+
+  .main-navigation__site-nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    z-index: -1;
+
+    width: 200vw;
+    height: 100%;
+
+    background-color: #ffffff;
+  }
+}
+
+.main-navigation__user-nav {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  grid-area: user-nav;
+}
+
+@media (min-width: 768px) {
+  .main-navigation__user-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+
+    margin-left: auto;
+  }
+
+  .main-navigation__user-nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    z-index: -1;
+
+    width: 200vw;
+    height: 100%;
+
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-navigation__user-nav {
+    width: 100%;
+    padding-left: 100px;
+  }
+}
+
+.main-navigation__news-nav {
+  display: none;
+
+  grid-area: news-nav;
+}
+
+@media (min-width: 1150px) {
+  .main-navigation__news-nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .main-navigation__user-text {
+    font-size: 0;
+  }
+}
+
+
+.main-navigation__delivery-text {
+  display: none;
+  margin: 0;
+
+  grid-area: delivery-text;
+}
+
+@media (min-width: 1150px) {
+  .main-navigation__delivery-text {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: "Open Sans";
+    text-align: right;
+    color: #444444;
+
+    mix-blend-mode: normal;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .main-navigation__delivery-text {
+    display: block;
+    align-items: center;
+    padding: 20px 40px 20px 50px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: "Open Sans";
+    text-align: right;
+    color: #444444;
+    text-align-last: right;
+
+    mix-blend-mode: normal;
+  }
+}

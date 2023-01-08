@@ -1,0 +1,156 @@
+.reviews__wrapper {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+  .reviews__wrapper {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 0 50px;
+    column-gap: 313px;
+  }
+}
+
+.reviews__content-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+
+@media (min-width: 768px) {
+  .reviews__content-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+.reviews__content-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  color: #444444;
+
+  mix-blend-mode: normal;
+}
+
+@media (min-width: 768px) {
+  .reviews__content-text  {
+    max-width: 668px;
+    font-size: 17px;
+  }
+}
+
+.reviews__container-text {}
+
+@media (min-width: 768px) {
+  .reviews__container-text  {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.reviews__author {}
+
+@media (min-width: 768px) {
+  .reviews__author {
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+
+}
+
+.reviews__author-name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .reviews__author-name {
+    font-size: 18px;
+  }
+
+}
+
+.reviews__author-nickname {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+
+.reviews__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 24px 30px;
+}
+
+@media (min-width: 768px) {
+  .reviews__link {
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+
+}
+
+.reviews__controls {
+  display: flex;
+  min-width: 260px;
+  max-width: 260px;
+  margin: 0 0 38px 0;
+}
+
+@media (min-width: 768px) {
+  .reviews__controls {
+    grid-row-start: 3;
+    justify-content: center;
+  }
+
+}
+
+.reviews__control-button {
+  width: 50%;
+  height: 52px;
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+}
+
