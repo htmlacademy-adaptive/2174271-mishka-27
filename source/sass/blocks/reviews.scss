@@ -27,6 +27,13 @@
   mix-blend-mode: normal;
 }
 
+@media (min-width: 768px) {
+  .reviews__content-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
 .reviews__content-text {
   font-family: "Open Sans";
   font-style: normal;
@@ -40,6 +47,13 @@
   color: #444444;
 
   mix-blend-mode: normal;
+}
+
+@media (min-width: 768px) {
+  .reviews__content-text  {
+    max-width: 668px;
+    font-size: 17px;
+  }
 }
 
 .reviews__container-text {}
@@ -75,6 +89,13 @@
 
   mix-blend-mode: normal;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .reviews__author-name {
+    font-size: 18px;
+  }
+
 }
 
 .reviews__author-nickname {
