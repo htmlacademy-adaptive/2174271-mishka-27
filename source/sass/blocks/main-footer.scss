@@ -6,6 +6,14 @@
   background: #f1f1f1;
 }
 
+@media (min-width: 768px) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .main-footer__social {
   width: 100%;
   max-width: 1150px;
@@ -61,4 +69,12 @@
   text-decoration: none;
 
   mix-blend-mode: normal;
+}
+
+.main-footer__logo {}
+
+@media (max-width: 767px) {
+  .main-footer__logo {
+    display: none;
+  }
 }
