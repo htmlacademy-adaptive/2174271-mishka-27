@@ -4,10 +4,8 @@
   max-width: 1150px;
   margin: 0 auto;
   background: #f1f1f1;
-}
 
-@media (min-width: 768px) {
-  .main-footer {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,16 +69,14 @@
   mix-blend-mode: normal;
 }
 
-.main-footer__logo {}
-
-@media (max-width: 767px) {
-  .main-footer__logo {
+.main-footer__logo {
+  @media (max-width: 767px) {
     display: none;
   }
-}
 
-@media (min-width: 768px) {
-  .main-footer__logo {
+  @media (min-width: 768px) {
     padding: 23px 7.5%;
   }
 }
+
+

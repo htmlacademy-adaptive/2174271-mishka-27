@@ -29,33 +29,30 @@
   padding: 27px 30px 27px 76px;
 
   border-bottom: 1px solid #ececec;
-}
 
-@media (min-width: 768px) {
-  .main-navigation__site-item {
+  @media (min-width: 768px) {
     padding: 20px 37px 0 0;
 
     border: none;
   }
+
 }
+
 
 
 .main-navigation__user-item {
   padding: 27px 30px 27px 76px;
 
   border-bottom: 1px solid #ececec;
-}
 
-@media (min-width: 768px) {
-  .main-navigation__user-item {
+  @media (min-width: 768px) {
     border: 0;
   }
+
 }
 
-
-
-@media (min-width: 768px) {
-  .nav-search {
+.nav-search {
+  @media (min-width: 768px) {
     padding: 36px 31px 28px 33px;
     border-right: 1px solid #ececec;
     border-left: 1px solid #ececec;
@@ -88,10 +85,8 @@
   padding-top: 80px;
 
   background-color: #ffffff;
-}
 
-@media (min-width: 768px) {
-  .main-navigation {
+  @media (min-width: 768px) {
     padding-top: 0;
 
     background-color: #f2f2f2;
@@ -99,25 +94,23 @@
 }
 
 
+
+
 .main-navigation__wrapper {
   display: grid;
 
   grid-template-areas: "site-nav"
   "user-nav";
-}
 
-@media (min-width: 768px) {
-  .main-navigation__wrapper {
+  @media (min-width: 768px) {
     padding: 0 30px;
 
     grid-template-areas: "user-nav user-nav"
     "site-nav delivery-text";
     grid-template-columns: 1fr 1fr;
   }
-}
 
-@media (min-width: 1150px) {
-  .main-navigation__wrapper {
+  @media (min-width: 1150px) {
     padding: 0;
 
     grid-template-areas: "site-nav user-nav"
@@ -127,8 +120,8 @@
 
 
 
-@media (min-width: 768px) {
-  .main-header__toggle-button--closed {
+.main-header__toggle-button--closed {
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -142,33 +135,30 @@
   list-style: none;
 
   grid-area: site-nav;
-}
 
-@media (min-width: 768px) {
-  .main-navigation__site-nav {
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
-}
 
-@media (min-width: 1150px) {
-  .main-navigation__site-nav {
+  @media (min-width: 1150px) {
     padding-right: 100px;
   }
 
-  .main-navigation__site-nav::before {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
     left: -100vw;
     z-index: -1;
 
-    width: 200vw;
     height: 100%;
 
     background-color: #ffffff;
   }
 }
+
+
 
 .main-navigation__user-nav {
   position: relative;
@@ -179,10 +169,8 @@
   list-style: none;
 
   grid-area: user-nav;
-}
 
-@media (min-width: 768px) {
-  .main-navigation__user-nav {
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -191,7 +179,7 @@
     margin-left: auto;
   }
 
-  .main-navigation__user-nav::before {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -203,36 +191,33 @@
 
     background-color: #ffffff;
   }
-}
 
-@media (min-width: 1150px) {
-  .main-navigation__user-nav {
+  @media (min-width: 1150px) {
     width: 100%;
     padding-left: 100px;
   }
 }
 
+
+
 .main-navigation__news-nav {
   display: none;
 
   grid-area: news-nav;
-}
 
-@media (min-width: 1150px) {
-  .main-navigation__news-nav {
+  @media (min-width: 1150px) {
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0;
   }
 }
 
-
-
-@media (min-width: 768px) {
-  .main-navigation__user-text {
+.main-navigation__user-text {
+  @media (min-width: 768px) {
     font-size: 0;
   }
 }
+
 
 
 .main-navigation__delivery-text {
@@ -240,29 +225,8 @@
   margin: 0;
 
   grid-area: delivery-text;
-}
 
-@media (min-width: 1150px) {
-  .main-navigation__delivery-text {
-    display: flex;
-    align-items: center;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    font-family: "Open Sans";
-    text-align: right;
-    color: #444444;
-
-    mix-blend-mode: normal;
-  }
-}
-
-
-
-@media (min-width: 768px) {
-  .main-navigation__delivery-text {
+  @media (min-width: 768px) {
     display: block;
     align-items: center;
     padding: 20px 40px 20px 50px;
@@ -275,6 +239,22 @@
     text-align: right;
     color: #444444;
     text-align-last: right;
+
+    mix-blend-mode: normal;
+  }
+
+
+  @media (min-width: 1150px) {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: "Open Sans";
+    text-align: right;
+    color: #444444;
 
     mix-blend-mode: normal;
   }

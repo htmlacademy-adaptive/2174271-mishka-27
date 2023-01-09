@@ -1,12 +1,12 @@
 .info__wrapper {
   padding: 0 30px;
-}
 
-@media (min-width: 768px) {
-  .info__wrapper {
+  @media (min-width: 768px) {
     padding: 55px 50px 83px;
   }
 }
+
+
 
 .info__title {
   display: flex;
@@ -20,16 +20,15 @@
   color: #000000;
 
   mix-blend-mode: normal;
-}
 
-@media (min-width: 768px) {
-  .info__title {
+  @media (min-width: 768px) {
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 97px;
   }
-
 }
+
+
 
 .info__item {
   position: relative;
@@ -46,16 +45,15 @@
   color: #000000;
 
   mix-blend-mode: normal;
-}
 
-@media (min-width: 768px) {
-  .info__item {
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 110px;
   }
-
 }
+
+
 
 .info__list {
   margin: 0;

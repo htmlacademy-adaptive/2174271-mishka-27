@@ -14,33 +14,31 @@
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-}
 
-@media (min-width: 768px) {
-  .main-header__logo {
+  @media (min-width: 768px) {
     left: 40px;
     transform: translateX(0);
   }
-}
 
-@media (min-width: 1150px) {
-  .main-header__logo {
+  @media (min-width: 1150px) {
     left: 50%;
     transform: translateX(-50%);
   }
+
 }
+
 
 .main-header__toggle-button {
   position: absolute;
   top: 20px;
   right: 20px;
-}
 
-@media (min-width: 768px) {
-  .main-header__toggle-button {
+  @media (min-width: 768px) {
     display: none;
   }
 }
+
+
 
 
 .main-header__toggle-button--closed {
