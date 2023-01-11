@@ -24,7 +24,7 @@
 }
 
 .catalog-cards__info {
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -33,7 +33,7 @@
   display: flex;
   align-items: center;
 
-  color: #000000;
+  color: $color-default-black;
 
   mix-blend-mode: normal;
   text-decoration: none;
@@ -42,12 +42,12 @@
 .catalog-cards__wrapper {
   margin-bottom: 30px;
   padding: 28px 32px 0 28px;
-  border: 1px solid #ececec;
+  border: 1px solid $color-whisper;
 }
 
 .catalog-cards__product {
   padding-bottom: 17px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $color-whisper;
 }
 
 .catalog-cards__price {
@@ -56,7 +56,7 @@
 }
 
 .catalog-cards__description {
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -65,14 +65,14 @@
   display: flex;
   align-items: center;
 
-  color: #444444;
+  color: $color-charcoal;
 
   mix-blend-mode: normal;
 }
 
 
 .price__value {
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -81,7 +81,7 @@
   display: flex;
   align-items: center;
 
-  color: #000000;
+  color: $color-default-black;
 
   mix-blend-mode: normal;
 }

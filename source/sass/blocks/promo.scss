@@ -2,9 +2,9 @@
   margin: 0 auto;
   padding: 0 30px;
 
-  background-color: #ffffff;
+  background-color: $color-default-white;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     display: grid;
     padding: 52px 50px 69px;
     grid-template-columns: 2fr 1fr;
@@ -18,7 +18,7 @@
 
 
 .promo__header {
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     align-items: center;
     margin-bottom: 50px;
     display: grid;
@@ -36,13 +36,13 @@
   font-style: normal;
   font-weight: 700;
 
-  font-family: "Open Sans";
-  color: #000000;
+  font-family: $ff-open-sans;
+  color: $color-default-black;
 
   grid-column: 1/-1;
   mix-blend-mode: normal;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     margin-right: 130px;
 
     font-size: 43px;
@@ -63,13 +63,13 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  font-family: "Open Sans";
-  color: #63d1bb;
+  font-family: $ff-open-sans;
+  color: $color-downy;
   text-transform: uppercase;
 
   mix-blend-mode: normal;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     position: absolute;
     top: 5px;
     right: 0;
@@ -88,8 +88,8 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  font-family: "Open Sans";
-  color: #444444;
+  font-family: $ff-open-sans;
+  color: $color-charcoal;
 
   mix-blend-mode: normal;
 }
@@ -108,10 +108,10 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  font-family: "Open Sans";
-  color: #444444;
+  font-family: $ff-open-sans;
+  color: $color-charcoal;
 
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $color-whisper;
 
   mix-blend-mode: normal;
 }
@@ -134,9 +134,9 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
   text-align: center;
-  color: #444444;
+  color: $color-charcoal;
 
   mix-blend-mode: normal;
 }
@@ -152,5 +152,5 @@
   margin: 24px 30px;
   padding: 16px;
 
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
 }

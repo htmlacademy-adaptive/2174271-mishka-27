@@ -9,7 +9,7 @@
   max-width: 260px;
   margin: 0 auto;
 
-  border: 1px solid #ececec;
+  border: 1px solid $color-whisper;
 }
 
 .production__title {
@@ -22,8 +22,8 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  font-family: "Open Sans";
-  color: #000000;
+  font-family: $ff-open-sans;
+  color: $color-default-black;
 
   mix-blend-mode: normal;
 }
@@ -36,14 +36,14 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  font-family: "Open Sans";
-  color: #444444;
+  font-family: $ff-open-sans;
+  color: $color-charcoal;
 
   mix-blend-mode: normal;
 }
 
 .production__link {
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
 }
 
 .production__video-play {

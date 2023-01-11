@@ -1,10 +1,11 @@
 .form__intro {
   position: relative;
-  background-color: #f1f1f1;
+
+  background-color: $color-white-smoke;
 }
 
 .intro__title-wrapper {
-  max-width: 1150px;
+  max-width: $vp-1150;
   margin: 0 auto;
   padding: 73px 30px;
 }
@@ -18,11 +19,11 @@
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
   text-align: center;
-  color: #000000;
+  color: $color-default-black;
 
-  background-color: #f1f1f1;
+  background-color: $color-white-smoke;
 
   mix-blend-mode: normal;
 }
@@ -41,8 +42,8 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  font-family: "Open Sans";
-  color: #444444;
+  font-family: $ff-open-sans;
+  color: $color-charcoal;
 
   mix-blend-mode: normal;
 }
@@ -58,8 +59,8 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
-  font-family: "Open Sans";
-  color: #63d1bb;
+  font-family: $ff-open-sans;
+  color: $color-downy;
   text-transform: uppercase;
   &::before {
     content: "";
@@ -70,7 +71,7 @@
     width: 100%;
     height: 1px;
 
-    background-color: #62d1ba;
+    background-color: $color-downy-mod;
   }
 }
 
@@ -98,8 +99,8 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
-  font-family: "Open Sans";
-  color: #63d1bb;
+  font-family: $ff-open-sans;
+  color: $color-downy;
   text-transform: uppercase;
 
   mix-blend-mode: normal;
@@ -112,7 +113,7 @@
     height: 1px;
     margin-left: 60px;
 
-    background-color: #62d1ba;
+    background-color: $color-downy-mod;
   }
 }
 
@@ -144,8 +145,8 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  font-family: "Open Sans";
-  color: #000000;
+  font-family: $ff-open-sans;
+  color: $color-default-black;
 
   mix-blend-mode: normal;
 }
@@ -158,8 +159,8 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  font-family: "Open Sans";
-  color: #000000;
+  font-family: $ff-open-sans;
+  color: $color-default-black;
 
   mix-blend-mode: normal;
 }
@@ -174,8 +175,8 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  font-family: "Open Sans";
-  color: #000000;
+  font-family: $ff-open-sans;
+  color: $color-default-black;
 }
 
 .form__field-item {
@@ -199,12 +200,12 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
-  font-family: "Open Sans";
-  color: #444444;
+  font-family: $ff-open-sans;
+  color: $color-charcoal;
 
   background-color: transparent;
   border: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid $color-default-black;
 }
 
 .field__list {
@@ -218,9 +219,9 @@
 
   font-size: 17px;
   line-height: 18px;
-  color: #000000;
+  color: $color-default-black;
 
-  border: 2px solid #444444;
+  border: 2px solid $color-charcoal;
 
   resize: none;
 }
@@ -233,8 +234,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  font-family: "Open Sans";
-  color: #444444;
+  font-family: $ff-open-sans;
+  color: $color-charcoal;
 
   mix-blend-mode: normal;
 }
@@ -249,9 +250,9 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
   text-align: center;
-  color: #444444;
+  color: $color-charcoal;
   text-transform: uppercase;
 
   mix-blend-mode: normal;

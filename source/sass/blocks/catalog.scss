@@ -1,5 +1,5 @@
 .catalog__title {
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
@@ -9,12 +9,12 @@
   align-items: center;
   text-align: center;
 
-  color: #000000;
+  color: $color-default-black;
 
   mix-blend-mode: normal;
   }
 
   .catalog__title-wrapper {
     padding: 73px 30px;
-    background-color: #f1f1f1;;
+    background-color: $color-white-smoke;;
   }

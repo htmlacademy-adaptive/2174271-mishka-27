@@ -1,20 +1,20 @@
 .hero__wrapper {
   width: 100%;
-  max-width: 1150px;
+  max-width: $vp-1150;
   margin: 0 auto;
 
-  background-color: #f9f9f9;
+  background-color: $color-snow;
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 320px 373px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     padding-top: 94px;
     padding-bottom: 135px;
 
     background-position: 50% -60px;
-    background-size: 768px 746px;
+    background-size: $vp-768 746px;
   }
 }
 
@@ -30,16 +30,16 @@
   line-height: 30px;
   font-family: $ff-open-sans;
   text-align: center;
-  color: #000000;
+  color: $color-default-black;
 
   mix-blend-mode: normal;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     font-size: 40px;
     line-height: 50px;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $vp-1150) {
     font-size: 50px;
   }
 
@@ -54,12 +54,12 @@
 
   list-style: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     display: flex;
     max-width: 668px;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $vp-1150) {
     max-width: 1050px;
     margin-bottom: 132px;
   }
@@ -67,10 +67,10 @@
 
 .hero__list-item {
   &--interior {
-    background-color: #63d1bb;
+    background-color: $color-downy;
   } ;
   &--toys {
-    background-color: #56c3b2;
+    background-color: $color-puerto-rico;
   }
 }
 
@@ -84,15 +84,15 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 30px;
-  font-family: "Open Sans";
-  color: #ffffff;
+  font-family: $ff-open-sans;
+  color: $color-default-white;
   text-decoration: none;
 
   mix-blend-mode: normal;
 }
 
 .hero__list-item--interior {
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     width: 50%;
     height: 103px;
   }

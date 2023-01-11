@@ -6,7 +6,7 @@
 
 .main-header__logo-container {
   padding: 1px 0;
-  box-shadow: 0 1px 0 #ececec, inset 0 -1px 0 #ececec;
+  box-shadow: 0 1px 0 $color-whisper, inset 0 -1px 0 $color-whisper;
 }
 
 .main-header__logo {
@@ -15,12 +15,12 @@
   left: 50%;
   transform: translateX(-50%);
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     left: 40px;
     transform: translateX(0);
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $vp-1150) {
     left: 50%;
     transform: translateX(-50%);
   }
@@ -33,7 +33,7 @@
   top: 20px;
   right: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     display: none;
   }
 }

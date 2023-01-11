@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     display: grid;
     grid-auto-rows: minmax(100px, auto);
     padding: 0 50px;
@@ -11,7 +11,7 @@
 }
 
 .reviews__content-title {
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -20,11 +20,11 @@
   display: flex;
   align-items: center;
 
-  color: #000000;
+  color: $color-default-black;
 
   mix-blend-mode: normal;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     font-size: 43px;
     line-height: 50px;
   }
@@ -33,7 +33,7 @@
 
 
 .reviews__content-text {
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -42,11 +42,11 @@
   display: flex;
   align-items: center;
 
-  color: #444444;
+  color: $color-charcoal;
 
   mix-blend-mode: normal;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     max-width: 668px;
     font-size: 17px;
   }
@@ -54,7 +54,7 @@
 
 
 .reviews__container-text {
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -63,7 +63,7 @@
 
 
 .reviews__author {
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     grid-row-start: 3;
     grid-column-start: 1;
   }
@@ -72,7 +72,7 @@
 
 
 .reviews__author-name {
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -81,12 +81,12 @@
   display: flex;
   align-items: center;
 
-  color: #000000;
+  color: $color-default-black;
 
   mix-blend-mode: normal;
   margin: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     font-size: 18px;
   }
 }
@@ -94,7 +94,7 @@
 
 
 .reviews__author-nickname {
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -104,20 +104,20 @@
   display: flex;
   align-items: center;
 
-  color: #000000;
+  color: $color-default-black;
 
   mix-blend-mode: normal;
 }
 
 .reviews__link {
-  font-family: "Open Sans";
+  font-family: $ff-open-sans;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   margin: 24px 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     grid-row-start: 1;
     grid-column-start: 2;
   }
@@ -131,7 +131,7 @@
   max-width: 260px;
   margin: 0 0 38px 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     grid-row-start: 3;
     justify-content: center;
   }
@@ -143,7 +143,7 @@
   width: 50%;
   height: 52px;
   padding: 0;
-  background-color: #ffffff;
-  border: 1px solid #ececec;
+  background-color: $color-default-white;
+  border: 1px solid $color-whisper;
 }
 
