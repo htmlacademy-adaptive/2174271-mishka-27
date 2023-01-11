@@ -4,7 +4,6 @@
   }
 }
 
-
 .contacts__wrapper {
   max-width: 600px;
   margin: 0 auto;
@@ -17,8 +16,6 @@
     max-width: $vp-1150;
   }
 }
-
-
 
 .contacts__content {
   @media (min-width: $vp-768) {
@@ -75,8 +72,6 @@
   }
 }
 
-
-
 .contacts__email-link {
   font-family: $ff-open-sans;
 
@@ -98,8 +93,6 @@
   }
 }
 
-
-
 .contacts__address {
   font-family: $ff-open-sans;
 
@@ -118,8 +111,6 @@
   }
 }
 
-
-
 .contacts__container-mail {
   display: flex;
 
@@ -130,7 +121,6 @@
   }
 }
 
-
 .contacts__container-address {
   display: flex;
 
@@ -140,7 +130,6 @@
     column-gap: 24px;
   }
 }
-
 
 .contacts__map {
   @media (min-width: $vp-768) {

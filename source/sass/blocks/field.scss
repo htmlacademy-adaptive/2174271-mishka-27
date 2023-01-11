@@ -15,3 +15,68 @@
 
   resize: none;
 }
+
+.field-radio__label {
+  position: relative;
+
+  display: block;
+  align-items: center;
+  padding-left: 61px;
+
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $ff-open-sans;
+  color: $color-default-black;
+
+  mix-blend-mode: normal;
+}
+
+.field-checkbox__label {
+  display: flex;
+  align-items: center;
+
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $ff-open-sans;
+  color: $color-default-black;
+
+  mix-blend-mode: normal;
+}
+
+
+.field__title {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin: 0 0 42px;
+
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  font-family: $ff-open-sans;
+  color: $color-downy;
+  text-transform: uppercase;
+
+  mix-blend-mode: normal;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    width: 80%;
+    height: 1px;
+    margin-left: 60px;
+
+    background-color: $color-downy-mod;
+  }
+}
+
+.field__order-form {
+  margin-bottom: 33px;
+}

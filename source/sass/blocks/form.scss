@@ -63,39 +63,6 @@
   padding: 0;
 }
 
-.field__title {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  margin: 0 0 42px;
-
-
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
-  font-family: $ff-open-sans;
-  color: $color-downy;
-  text-transform: uppercase;
-
-  mix-blend-mode: normal;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-
-    width: 80%;
-    height: 1px;
-    margin-left: 60px;
-
-    background-color: $color-downy-mod;
-  }
-}
-
-.field__order-form {
-  margin-bottom: 33px;
-}
-
 .form__field-list {
   display: flex;
   flex-direction: column;
