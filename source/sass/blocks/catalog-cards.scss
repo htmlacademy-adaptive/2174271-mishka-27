@@ -6,11 +6,6 @@
   list-style-type: none;
 }
 
-.card {
-  display: grid;
-  grid-template-rows: auto auto;
-}
-
 .catalog-cards__list {
   margin: 0 auto;
   padding: 0 30px;
@@ -23,9 +18,15 @@
   margin: 0 auto;
 }
 
+.catalog-cards__price {
+  padding-top: 22px;
+  padding-bottom: 32px;
+}
+
+
 .catalog-cards__info {
   font-family: $ff-open-sans;
-  font-style: normal;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -50,14 +51,11 @@
   border-bottom: 1px solid $color-whisper;
 }
 
-.catalog-cards__price {
-  padding-top: 22px;
-  padding-bottom: 32px;
-}
+
 
 .catalog-cards__description {
   font-family: $ff-open-sans;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
@@ -70,10 +68,9 @@
   mix-blend-mode: normal;
 }
 
-
-.price__value {
+.catalog-cards__price-value {
   font-family: $ff-open-sans;
-  font-style: normal;
+
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
@@ -85,3 +82,5 @@
 
   mix-blend-mode: normal;
 }
+
+

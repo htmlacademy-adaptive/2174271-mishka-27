@@ -3,7 +3,7 @@
 @import "global/fonts.scss";
 @import "global/global-styles.scss";
 
-@import "blocks/navigation.scss";
+@import "blocks/main-navigation.scss";
 @import "blocks/promo.scss";
 @import "blocks/info.scss";
 @import "blocks/reviews.scss";
@@ -12,8 +12,12 @@
 @import "blocks/modal.scss";
 @import "blocks/form.scss";
 @import "blocks/catalog.scss";
-@import "blocks/catalog-card.scss";
+@import "blocks/catalog-cards.scss";
 @import "blocks/production.scss";
 @import "blocks/main-header.scss";
 @import "blocks/hero.scss";
+@import "blocks/price.scss";
+@import "blocks/field.scss";
+@import "blocks/intro.scss";
+@import "blocks/social.scss";
 

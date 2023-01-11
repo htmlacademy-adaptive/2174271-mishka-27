@@ -4,30 +4,6 @@
   background-color: $color-white-smoke;
 }
 
-.intro__title-wrapper {
-  max-width: $vp-1150;
-  margin: 0 auto;
-  padding: 73px 30px;
-}
-
-.intro__title {
-  display: block;
-  align-items: center;
-  margin: 0;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 30px;
-  font-family: $ff-open-sans;
-  text-align: center;
-  color: $color-default-black;
-
-  background-color: $color-white-smoke;
-
-  mix-blend-mode: normal;
-}
-
 .form {
   position: relative;
 
@@ -38,7 +14,7 @@
   display: flex;
   align-items: center;
 
-  font-style: normal;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -55,7 +31,7 @@
   align-items: center;
   margin: 0 0 34px;
 
-  font-style: normal;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
@@ -74,7 +50,6 @@
     background-color: $color-downy-mod;
   }
 }
-
 
 .form__field {
   margin: 0 0 42px;
@@ -95,7 +70,7 @@
   align-items: center;
   margin: 0 0 42px;
 
-  font-style: normal;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
@@ -117,7 +92,7 @@
   }
 }
 
-.order-form__field {
+.field__order-form {
   margin-bottom: 33px;
 }
 
@@ -134,36 +109,7 @@
 }
 
 
-.field-radio__label {
-  position: relative;
 
-  display: block;
-  align-items: center;
-  padding-left: 61px;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
-  font-family: $ff-open-sans;
-  color: $color-default-black;
-
-  mix-blend-mode: normal;
-}
-
-.field-checkbox__label {
-  display: flex;
-  align-items: center;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
-  font-family: $ff-open-sans;
-  color: $color-default-black;
-
-  mix-blend-mode: normal;
-}
 
 
 .field-text__label {
@@ -171,7 +117,7 @@
   flex-direction: column;
   margin-bottom: 22px;
 
-  font-style: normal;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -196,7 +142,7 @@
   width: 100%;
   padding: 17px 10px 15px 0;
 
-  font-style: normal;
+
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -208,29 +154,12 @@
   border-bottom: 2px solid $color-default-black;
 }
 
-.field__list {
-  padding: 0;
-}
-
-.field-text__textarea {
-  min-width: 260px;
-  min-height: 142px;
-  padding: 15px;
-
-  font-size: 17px;
-  line-height: 18px;
-  color: $color-default-black;
-
-  border: 2px solid $color-charcoal;
-
-  resize: none;
-}
 
 .form__notice-text {
   display: flex;
   align-items: center;
 
-  font-style: normal;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -246,7 +175,7 @@
   margin: 0 auto;
   padding: 18px 37px;
 
-  font-style: normal;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;

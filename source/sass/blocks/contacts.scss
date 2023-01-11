@@ -32,7 +32,7 @@
 
 .contacts__title {
   font-family: $ff-open-sans;
-  font-style: normal;
+
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -58,7 +58,7 @@
 
 .contacts__subtitle {
   font-family: $ff-open-sans;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -79,7 +79,7 @@
 
 .contacts__email-link {
   font-family: $ff-open-sans;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -102,7 +102,7 @@
 
 .contacts__address {
   font-family: $ff-open-sans;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -142,7 +142,7 @@
 }
 
 
-.contacts-map {
+.contacts__map {
   @media (min-width: $vp-768) {
     grid-row-start: 2;
     margin-bottom: 55px;
@@ -152,7 +152,7 @@
 .contacts__link {
   margin: 24px 30px;
 
-  font-style: normal;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
