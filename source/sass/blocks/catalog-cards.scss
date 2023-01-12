@@ -4,18 +4,34 @@
   justify-content: stretch;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $vp-768) {
+    padding: 79px 50px 53px 50px;
+  }
 }
 
 .catalog-cards__list {
   margin: 0 auto;
   padding: 0 30px;
   list-style: none;
+
+
+  @media (min-width: $vp-768) {
+    justify-content: center;
+  }
 }
 
 .catalog-cards__item {
   min-width: 260px;
-  max-width: 260px;
   margin: 0 auto;
+  display: grid;
+
+
+  @media (min-width: $vp-768) {
+    max-width: 668px;
+    margin-bottom: 54px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .catalog-cards__price {
@@ -44,6 +60,10 @@
   margin-bottom: 30px;
   padding: 28px 32px 0 28px;
   border: 1px solid $color-whisper;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
+  }
 }
 
 .catalog-cards__product {
@@ -84,5 +104,6 @@
 
 .catalog-cards__image {
   width: 100%;
+  height: 100%;
 }
 
