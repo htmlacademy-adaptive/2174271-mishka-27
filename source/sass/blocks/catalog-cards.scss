@@ -8,6 +8,10 @@
   @media (min-width: $vp-768) {
     padding: 79px 50px 53px 50px;
   }
+
+  @media (min-width: $vp-1150) {
+    padding: 129px 50px 57px;
+  }
 }
 
 .catalog-cards__list {
@@ -18,6 +22,14 @@
 
   @media (min-width: $vp-768) {
     justify-content: center;
+  }
+
+  @media (min-width: $vp-1150) {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(3,316px);
+    row-gap: 50px;
+    gap: 50px;
   }
 }
 
@@ -31,6 +43,14 @@
     max-width: 668px;
     margin-bottom: 54px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $vp-1150) {
+    max-width: 668px;
+    margin-bottom: 54px;
+    display: flex;
+    flex-direction: column;
+
   }
 }
 
