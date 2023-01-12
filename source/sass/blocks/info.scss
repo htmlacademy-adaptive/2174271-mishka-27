@@ -47,6 +47,48 @@
     line-height: 22px;
     margin-bottom: 110px;
   }
+
+  &--ecology {
+    padding-top: 52px;
+    background-image: url("../img/ecology.svg");
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+  }
+
+  &--price {
+    padding-top: 52px;
+    background-image: url("../img/price.svg");
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+  }
+
+  &--like {
+    padding-top: 52px;
+    background-image: url("../img/like.svg");
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+  }
+
+  &--handmade {
+    padding-top: 52px;
+    background-image: url("../img/handmade.svg");
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+  }
+
+  &--local {
+    padding-top: 52px;
+    background-image: url("../img/local.svg");
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+  }
+
+  &--present {
+    padding-top: 52px;
+    background-image: url("../img/present.svg");
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+  }
 }
 
 .info__list {
@@ -69,3 +111,5 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+
