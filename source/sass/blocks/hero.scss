@@ -44,6 +44,9 @@
 
   @media (min-width: $vp-1150) {
     font-size: 50px;
+    padding-top: 93px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
 }
@@ -73,8 +76,12 @@
   }
 
   @media (min-width: $vp-1150) {
-    max-width: 1050px;
+    display: flex;
+    flex-direction: row;
+
     margin-bottom: 132px;
+    width: 100%;
+    max-width: 1150px;
   }
 }
 
