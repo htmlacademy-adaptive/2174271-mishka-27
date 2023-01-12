@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
 
-
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -14,7 +13,6 @@
 .main-navigation__site-link {
   display: flex;
   align-items: center;
-
 
   font-weight: 700;
   font-size: 17px;
@@ -31,11 +29,23 @@
 
   @media (min-width: $vp-768) {
     padding: 20px 37px 0 0;
+    background-color: $color-snow;
 
     border: none;
   }
 
+  @media (min-width: $vp-1150) {
+    &:nth-child(odd) {
+      border-right: 1px solid #ececec;
+      background-color: $color-default-white;
+    }
+    &:nth-child(even) {
+      padding-left: 35px;
+      background-color: $color-default-white;
+    }
+  }
 }
+
 
 .main-navigation__user-item {
   padding: 27px 30px 27px 76px;
@@ -45,12 +55,12 @@
   @media (min-width: $vp-768) {
     border: 0;
   }
-
 }
 
 .nav-search {
   @media (min-width: $vp-768) {
     padding: 36px 31px 28px 33px;
+
     border-right: 1px solid $color-whisper;
     border-left: 1px solid $color-whisper;
   }
@@ -100,6 +110,7 @@
     grid-template-areas: "user-nav user-nav"
     "site-nav delivery-text";
     grid-template-columns: 1fr 1fr;
+    background-color: $color-snow;
   }
 
   @media (min-width: $vp-1150) {
@@ -107,6 +118,7 @@
 
     grid-template-areas: "site-nav user-nav"
     "news-nav delivery-text";
+    background-color: $color-default-white;
   }
 }
 
@@ -163,7 +175,6 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     align-content: flex-start;
-
     margin-left: auto;
   }
 
@@ -195,6 +206,10 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0;
+
+    list-style-type: none;
+    margin: 0;
+    background-color: $color-snow;
   }
 }
 
@@ -215,7 +230,6 @@
     align-items: center;
     padding: 20px 40px 20px 50px;
 
-
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
@@ -225,20 +239,41 @@
     text-align-last: right;
 
     mix-blend-mode: normal;
+    background-color: $color-snow;
   }
 
   @media (min-width: $vp-1150) {
-    display: flex;
     align-items: center;
-
+    padding: 25px 0 20px 50px;
 
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     font-family: $ff-open-sans;
     text-align: right;
+    text-align: right;
     color: $color-charcoal;
 
     mix-blend-mode: normal;
+  }
+}
+
+
+.main-navigation__news-link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: $ff-open-sans;
+  color: $color-default-black;
+  text-decoration: none;
+}
+
+.main-navigation__news-link {
+  @media (min-width: $vp-1150) {
+    margin-right: 62px;
+    padding-top: 19px;
   }
 }

@@ -1,12 +1,18 @@
 .main-header {
   width: 100%;
   overflow: hidden;
-  background-color: #f2f2f2;
+  background-color: $color-snow;
 }
 
 .main-header__logo-container {
   padding: 1px 0;
   box-shadow: 0 1px 0 $color-whisper, inset 0 -1px 0 $color-whisper;
+  @media (min-width: $vp-768) {
+    padding: 0;
+  }
+  @media (min-width: $vp-1150) {
+    padding: 0;
+  }
 }
 
 .main-header__logo {
@@ -22,6 +28,7 @@
 
   @media (min-width: $vp-1150) {
     left: 50%;
+    top: 9px;
     transform: translateX(-50%);
   }
 
