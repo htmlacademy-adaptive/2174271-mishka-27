@@ -7,6 +7,13 @@
     grid-auto-rows: minmax(100px, auto);
     padding: 0 50px;
     column-gap: 313px;
+    background-image: url("../img/review.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: $vp-1150) {
+    padding: 76px 50px 96px 225px;
+    background-position: top left 50px;
   }
 }
 

@@ -77,9 +77,35 @@
 .hero__list-item {
   &--interior {
     background-color: $color-downy;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 36px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/interior.svg");
+      opacity: 0.8;
+    }
   } ;
+
   &--toys {
     background-color: $color-puerto-rico;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 108px;
+      right: 27px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/toy.svg");
+      opacity: 0.8;
+
+      @media (min-width: $vp-768) {
+        top: 23px;
+        left: 226px;
+      }
+    }
   }
 }
 
