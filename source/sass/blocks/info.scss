@@ -4,7 +4,13 @@
   @media (min-width: $vp-768) {
     padding: 55px 50px 83px 50px;
   }
+
+
+  @media (min-width: $vp-1150) {
+    padding: 67px 242px 90px 225px;
+  }
 }
+
 
 .info__title {
   display: flex;
@@ -23,6 +29,13 @@
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 97px;
+  }
+
+  @media (min-width: $vp-1150) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 97px;
+    padding: 0 170px;
   }
 }
 
@@ -110,6 +123,11 @@
 
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (min-width: $vp-1150) {
+    column-gap: 115px;
+  }
+
 }
 
 

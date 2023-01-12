@@ -97,6 +97,11 @@
       height: 62px;
       background-image: url("../img/interior.svg");
       opacity: 0.8;
+
+      @media (min-width: $vp-1150) {
+        top: 23px;
+        left: 480px;
+      }
     }
   } ;
 
@@ -115,6 +120,11 @@
       @media (min-width: $vp-768) {
         top: 23px;
         left: 226px;
+      }
+
+      @media (min-width: $vp-1150) {
+        top: 23px;
+        left: 1066px;
       }
     }
   }
