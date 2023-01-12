@@ -1,7 +1,7 @@
-@import "normalize.scss";
+@import "vendor/normalize.scss";
 @import "global/variables.scss";
 @import "global/fonts.scss";
-@import "global/global-styles.scss";
+@import "global/utils.scss";
 
 @import "blocks/main-navigation.scss";
 @import "blocks/promo.scss";
@@ -16,8 +16,8 @@
 @import "blocks/production.scss";
 @import "blocks/main-header.scss";
 @import "blocks/hero.scss";
-@import "blocks/price.scss";
 @import "blocks/field.scss";
 @import "blocks/intro.scss";
 @import "blocks/social.scss";
+@import "blocks/button.scss";
 

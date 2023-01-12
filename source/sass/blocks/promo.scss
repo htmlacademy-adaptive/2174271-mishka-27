@@ -6,7 +6,7 @@
 
   @media (min-width: $vp-768) {
     display: grid;
-    padding: 52px 50px 69px;
+    padding: 52px 50px 69px 50px;
     grid-template-columns: 2fr 1fr;
 
 
@@ -14,8 +14,6 @@
     column-gap: 42px;
   }
 }
-
-
 
 .promo__header {
   @media (min-width: $vp-768) {
@@ -52,8 +50,6 @@
   }
 }
 
-
-
 .promo__subtitle {
   display: flex;
   align-items: center;
@@ -78,8 +74,6 @@
     text-align: center;
   }
 }
-
-
 
 .promo__text {
   align-items: center;

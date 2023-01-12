@@ -1,6 +1,6 @@
 .contacts {
   @media (min-width: $vp-768) {
-    padding: 66px 0 54px;
+    padding: 66px 0 54px 0;
   }
 }
 
@@ -25,8 +25,6 @@
   }
 }
 
-
-
 .contacts__title {
   font-family: $ff-open-sans;
 
@@ -50,8 +48,6 @@
     line-height: 50px;
   }
 }
-
-
 
 .contacts__subtitle {
   font-family: $ff-open-sans;

@@ -30,8 +30,6 @@
   }
 }
 
-
-
 .reviews__content-text {
   font-family: $ff-open-sans;
 
@@ -52,7 +50,6 @@
   }
 }
 
-
 .reviews__container-text {
   @media (min-width: $vp-768) {
     grid-column-start: 1;
@@ -61,15 +58,12 @@
 
 }
 
-
 .reviews__author {
   @media (min-width: $vp-768) {
     grid-row-start: 3;
     grid-column-start: 1;
   }
 }
-
-
 
 .reviews__author-name {
   font-family: $ff-open-sans;
@@ -90,8 +84,6 @@
     font-size: 18px;
   }
 }
-
-
 
 .reviews__author-nickname {
   font-family: $ff-open-sans;
@@ -123,8 +115,6 @@
   }
 }
 
-
-
 .reviews__controls {
   display: flex;
   min-width: 260px;
@@ -136,8 +126,6 @@
     justify-content: center;
   }
 }
-
-
 
 .reviews__control-button {
   width: 50%;
