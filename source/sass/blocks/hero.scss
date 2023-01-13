@@ -147,7 +147,8 @@
   mix-blend-mode: normal;
 }
 
-.hero__list-item--interior {
+.hero__list-item--interior,
+.hero__list-item--toys {
   @media (min-width: $vp-768) {
     width: 50%;
     height: 103px;
