@@ -1,61 +1,462 @@
 .main-header {
   width: 100%;
-  overflow: hidden;
+
   background-color: $color-snow;
+
+  @media (min-width: $tablet-width) {
+    min-height: 89px;
+    padding: 0 50px;
+    overflow: hidden;
+  }
+
+  &--inner {
+    background-color: $color-white-smoke;
+  }
 }
 
-.main-header__logo-container {
-  padding: 1px 0;
-  box-shadow: 0 1px 0 $color-whisper, inset 0 -1px 0 $color-whisper;
-  @media (min-width: $vp-768) {
-    padding: 0;
-  }
-  @media (min-width: $vp-1150) {
-    padding: 0;
+.main-header__nav {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding-top: 80px;
+
+  background-color: $color-default-white;
+  box-shadow: inset 0 1px 0 0 $color-whisper, 0 1px 0 0 $color-whisper;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+
+    background-color: $color-transparent;
+    border: none;
+    box-shadow: none;
   }
 }
 
 .main-header__logo {
   position: absolute;
-  top: 20px;
+  top: 22px;
   left: 50%;
+  z-index: 1;
+
   transform: translateX(-50%);
 
-  @media (min-width: $vp-768) {
-    left: 40px;
-    transform: translateX(0);
+  @media (min-width: $tablet-width) {
+    left: -2px;
+
+    transform: none;
   }
 
-  @media (min-width: $vp-1150) {
-    left: 50%;
+  @media (min-width: $desktop-width) {
     top: 9px;
+    left: 50%;
+
     transform: translateX(-50%);
   }
 
-}
-
-.main-header__toggle-button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-
-  @media (min-width: $vp-768) {
-    display: none;
+  &--index {
+    pointer-events: none;
   }
 }
 
-.main-header__toggle-button--closed {
-  background-image: url("../img/menu.svg");
+.main-header__logo:hover img {
+  opacity: 60%;
+}
+
+.main-header__logo:active img {
+  opacity: 30%;
+}
+
+.main-header__button {
   position: absolute;
   top: 32px;
   right: 30px;
+
   width: 21px;
   height: 20px;
-  background-color: transparent;
+
+  background-color: $color-transparent;
+  background-image: url('../img/svg/hamburger.svg');
   background-repeat: no-repeat;
-  border: 0;
+  border: none;
   cursor: pointer;
+
+  .no-js & {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &--open {
+    top: 29px;
+    background-image: url('../img/svg/cross.svg');
+  }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
+.main-header__nav-wrapper {
+  display: none;
 
+  grid-template-areas:
+    'site-nav'
+    'user-nav';
 
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      'user-nav user-nav'
+      'site-nav delivery-text';
+    grid-template-columns: 48% 52%;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas:
+      'site-nav user-nav'
+      'news-nav delivery-text';
+  }
+
+  .no-js & {
+    display: grid;
+  }
+
+  &--open {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    display: grid;
+
+    @media (min-width: $tablet-width) {
+      position: static;
+    }
+  }
+}
+
+.main-header__site-nav {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  grid-area: site-nav;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: 185px auto;
+  }
+}
+
+.main-header__site-nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  z-index: -1;
+
+  width: 200vw;
+  height: 100%;
+
+  background-color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-transparent;
+  }
+}
+
+.main-header__site-item {
+  padding: 27px 30px 27px 76px;
+
+  border-bottom: 1px solid $color-whisper;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 37px 0 0;
+
+    border: none;
+
+    &:nth-child(even) {
+      padding-right: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 34px 34px 0 0;
+
+    &:nth-child(odd) {
+      border-right: 1px solid $color-whisper;
+    }
+
+    &:nth-child(even) {
+      padding-left: 35px;
+    }
+  }
+
+  &:first-child {
+    border-top: 1px solid $color-whisper;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+  }
+}
+
+.main-header__site-link {
+  display: block;
+
+  font-weight: 700;
+  color: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
+
+  &--no-cursor {
+    pointer-events: none;
+  }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.main-header__user-nav {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  grid-area: user-nav;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    width: 52%;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 100px;
+  }
+}
+
+.main-header__user-nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  z-index: -1;
+
+  width: 200vw;
+  height: 100%;
+
+  background-color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid rgba($color-default-black, 10%);
+  }
+}
+
+.main-header__user-item {
+  padding: 26px 30px 27px 30px;
+
+  border-bottom: 1px solid $color-whisper;
+
+  &--cart {
+    padding: 28px 30px 26px 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--search {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-right: 1px solid $color-whisper;
+
+      border-left: 1px solid $color-whisper;
+      min-height: 89px;
+      min-width: 84px;
+    }
+
+    &--cart {
+      padding: 33px 0 30px 31px;
+
+      border: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--cart {
+      padding-right: 2px;
+    }
+  }
+}
+
+.main-header__user-link {
+  position: relative;
+  display: block;
+
+  padding-left: 46px;
+
+  font-weight: 700;
+  color: inherit;
+
+  &--search {
+    @media (min-width: $tablet-width) {
+      min-width: 40px;
+      min-height: 40px;
+    }
+  }
+
+  &--cart {
+    @media (min-width: $tablet-width) {
+      padding-left: 51px;
+    }
+  }
+}
+
+.main-header__user-icon {
+  position: absolute;
+  top: 4px;
+  left: 2px;
+
+  width: 18px;
+  height: 18px;
+
+  fill: rgba($color-default-black, 20%);
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--cart {
+    top: 2px;
+    left: 0;
+    transform: none;
+
+    width: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.main-header__user-text {
+  &--search {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.main-header__user-link:hover .main-header__user-text {
+  opacity: 60%;
+}
+
+.main-header__user-link:active .main-header__user-text {
+  opacity: 30%;
+}
+
+.main-header__user-link:hover .main-header__user-icon {
+  fill: $color-downy;
+}
+
+.main-header__user-link:active .main-header__user-icon {
+  fill: rgba($color-downy, 20%);
+}
+
+.main-header__news-nav {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  grid-area: news-nav;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-header__news-item {
+  margin-right: 62px;
+  padding-top: 19px;
+
+  &:nth-child(even) {
+    margin: 0;
+  }
+}
+
+.main-header__news-link {
+  display: block;
+
+  font-weight: 700;
+  font-size: 15px;
+  color: inherit;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.main-header__delivery-text {
+  display: none;
+  margin: 0;
+
+  font-size: 15px;
+  color: $color-charcoal;
+
+  grid-area: delivery-text;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 20px 0 20px 50px;
+
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 1px;
+  }
+}

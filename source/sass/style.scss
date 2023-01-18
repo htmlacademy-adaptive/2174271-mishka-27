@@ -1,23 +1,31 @@
-@import "vendor/normalize.scss";
-@import "global/variables.scss";
+//Global
+// -----------------------------------
+
+@import "variables";
 @import "global/fonts.scss";
+@import "global/reboot.scss";
 @import "global/utils.scss";
+@import "global/container.scss";
 
-@import "blocks/main-navigation.scss";
-@import "blocks/promo.scss";
-@import "blocks/info.scss";
-@import "blocks/reviews.scss";
-@import "blocks/contacts.scss";
-@import "blocks/main-footer.scss";
-@import "blocks/modal.scss";
-@import "blocks/form.scss";
-@import "blocks/catalog.scss";
-@import "blocks/catalog-cards.scss";
-@import "blocks/production.scss";
-@import "blocks/main-header.scss";
-@import "blocks/hero.scss";
-@import "blocks/field.scss";
-@import "blocks/intro.scss";
-@import "blocks/social.scss";
+//Blocks
+// -----------------------------------
+@import "blocks/about-shop.scss";
 @import "blocks/button.scss";
-
+@import "blocks/card.scss";
+@import "blocks/catalog-header.scss";
+@import "blocks/catalog.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/form-header.scss";
+@import "blocks/form.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-index-container.scss";
+@import "blocks/modal-container.scss";
+@import "blocks/modal.scss";
+@import "blocks/order.scss";
+@import "blocks/production.scss";
+@import "blocks/reviews.scss";
+@import "blocks/subtitle.scss";
+@import "blocks/title.scss";
+@import "blocks/week-product.scss";
+@import "blocks/welcome.scss";
