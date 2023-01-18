@@ -1,0 +1,29 @@
+.intro {
+  position: relative;
+
+  background-color: $color-white-smoke;
+}
+
+.intro__title-wrapper {
+  max-width: $vp-1150;
+  margin: 0 auto;
+  padding: 73px 30px;
+}
+
+.intro__title {
+  display: block;
+  align-items: center;
+  margin: 0;
+
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  font-family: $ff-open-sans;
+  text-align: center;
+  color: $color-default-black;
+
+  background-color: $color-white-smoke;
+
+  mix-blend-mode: normal;
+}

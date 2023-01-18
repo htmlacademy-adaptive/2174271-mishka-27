@@ -2,12 +2,11 @@
   display: flex;
   align-items: center;
 
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  font-family: "Open Sans";
-  color: #000000;
+  font-family: $ff-open-sans;
+  color: $color-default-black;
   text-decoration: none;
 }
 
@@ -15,27 +14,35 @@
   display: flex;
   align-items: center;
 
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  font-family: "Open Sans";
-  color: #000000;
+  font-family: $ff-open-sans;
+  color: $color-default-black;
   text-decoration: none;
 }
-
 
 .main-navigation__site-item {
   padding: 27px 30px 27px 76px;
 
-  border-bottom: 1px solid #ececec;
-}
+  border-bottom: 1px solid $color-whisper;
 
-@media (min-width: 768px) {
-  .main-navigation__site-item {
+  @media (min-width: $vp-768) {
     padding: 20px 37px 0 0;
+    background-color: $color-snow;
 
     border: none;
+  }
+
+  @media (min-width: $vp-1150) {
+    &:nth-child(odd) {
+      border-right: 1px solid #ececec;
+      background-color: $color-default-white;
+    }
+    &:nth-child(even) {
+      padding-left: 35px;
+      background-color: $color-default-white;
+    }
   }
 }
 
@@ -43,25 +50,21 @@
 .main-navigation__user-item {
   padding: 27px 30px 27px 76px;
 
-  border-bottom: 1px solid #ececec;
-}
+  border-bottom: 1px solid $color-whisper;
 
-@media (min-width: 768px) {
-  .main-navigation__user-item {
+  @media (min-width: $vp-768) {
     border: 0;
   }
 }
 
-
-
-@media (min-width: 768px) {
-  .nav-search {
+.nav-search {
+  @media (min-width: $vp-768) {
     padding: 36px 31px 28px 33px;
-    border-right: 1px solid #ececec;
-    border-left: 1px solid #ececec;
+
+    border-right: 1px solid $color-whisper;
+    border-left: 1px solid $color-whisper;
   }
 }
-
 
 .main-navigation__site-link {
   display: block;
@@ -69,7 +72,6 @@
   color: inherit;
   text-decoration: none;
 }
-
 
 .main-navigation__user-link {
   display: block;
@@ -83,52 +85,45 @@
   z-index: 1;
 
   width: 100%;
-  max-width: 1150px;
+  max-width: $vp-1150;
   margin: 0 auto;
   padding-top: 80px;
 
-  background-color: #ffffff;
-}
+  background-color: $color-default-white;
 
-@media (min-width: 768px) {
-  .main-navigation {
+  @media (min-width: $vp-768) {
     padding-top: 0;
 
     background-color: #f2f2f2;
   }
 }
 
-
 .main-navigation__wrapper {
   display: grid;
 
   grid-template-areas: "site-nav"
   "user-nav";
-}
 
-@media (min-width: 768px) {
-  .main-navigation__wrapper {
+  @media (min-width: $vp-768) {
     padding: 0 30px;
 
     grid-template-areas: "user-nav user-nav"
     "site-nav delivery-text";
     grid-template-columns: 1fr 1fr;
+    background-color: $color-snow;
   }
-}
 
-@media (min-width: 1150px) {
-  .main-navigation__wrapper {
+  @media (min-width: $vp-1150) {
     padding: 0;
 
     grid-template-areas: "site-nav user-nav"
     "news-nav delivery-text";
+    background-color: $color-default-white;
   }
 }
 
-
-
-@media (min-width: 768px) {
-  .main-header__toggle-button--closed {
+.main-header__toggle-button--closed {
+  @media (min-width: $vp-768) {
     display: none;
   }
 }
@@ -142,31 +137,26 @@
   list-style: none;
 
   grid-area: site-nav;
-}
 
-@media (min-width: 768px) {
-  .main-navigation__site-nav {
+  @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
   }
-}
 
-@media (min-width: 1150px) {
-  .main-navigation__site-nav {
+  @media (min-width: $vp-1150) {
     padding-right: 100px;
   }
 
-  .main-navigation__site-nav::before {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
     left: -100vw;
     z-index: -1;
 
-    width: 200vw;
     height: 100%;
 
-    background-color: #ffffff;
+    background-color: $color-default-white;
   }
 }
 
@@ -179,19 +169,16 @@
   list-style: none;
 
   grid-area: user-nav;
-}
 
-@media (min-width: 768px) {
-  .main-navigation__user-nav {
+  @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-content: flex-start;
-
     margin-left: auto;
   }
 
-  .main-navigation__user-nav::before {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -201,12 +188,10 @@
     width: 200vw;
     height: 100%;
 
-    background-color: #ffffff;
+    background-color: $color-default-white;
   }
-}
 
-@media (min-width: 1150px) {
-  .main-navigation__user-nav {
+  @media (min-width: $vp-1150) {
     width: 100%;
     padding-left: 100px;
   }
@@ -216,66 +201,79 @@
   display: none;
 
   grid-area: news-nav;
-}
 
-@media (min-width: 1150px) {
-  .main-navigation__news-nav {
+  @media (min-width: $vp-1150) {
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0;
+
+    list-style-type: none;
+    margin: 0;
+    background-color: $color-snow;
   }
 }
 
-
-
-@media (min-width: 768px) {
-  .main-navigation__user-text {
+.main-navigation__user-text {
+  @media (min-width: $vp-768) {
     font-size: 0;
   }
 }
-
 
 .main-navigation__delivery-text {
   display: none;
   margin: 0;
 
   grid-area: delivery-text;
-}
 
-@media (min-width: 1150px) {
-  .main-navigation__delivery-text {
-    display: flex;
+  @media (min-width: $vp-768) {
+    display: block;
     align-items: center;
+    padding: 20px 40px 20px 50px;
 
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    font-family: "Open Sans";
+    font-family: $ff-open-sans;
     text-align: right;
-    color: #444444;
+    color: $color-charcoal;
+    text-align-last: right;
+
+    mix-blend-mode: normal;
+    background-color: $color-snow;
+  }
+
+  @media (min-width: $vp-1150) {
+    align-items: center;
+    padding: 25px 0 20px 50px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: $ff-open-sans;
+    text-align: right;
+    text-align: right;
+    color: $color-charcoal;
 
     mix-blend-mode: normal;
   }
 }
 
 
+.main-navigation__news-link {
+  display: flex;
+  align-items: center;
 
-@media (min-width: 768px) {
-  .main-navigation__delivery-text {
-    display: block;
-    align-items: center;
-    padding: 20px 40px 20px 50px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: $ff-open-sans;
+  color: $color-default-black;
+  text-decoration: none;
+}
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    font-family: "Open Sans";
-    text-align: right;
-    color: #444444;
-    text-align-last: right;
-
-    mix-blend-mode: normal;
+.main-navigation__news-link {
+  @media (min-width: $vp-1150) {
+    margin-right: 62px;
+    padding-top: 19px;
   }
 }
