@@ -1,7 +1,8 @@
 .week-product {
+  position: relative;
+
   padding-top: 31px;
   padding-bottom: 42px;
-  position: relative;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
@@ -10,43 +11,51 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+
     max-width: 1050px;
     padding-top: 73px;
     padding-bottom: 68px;
-    position: relative;
+    padding-right: 0;
   }
 
   &::after {
-    position: absolute;
     content: "";
-    background-image: url("../img/background/pattern-wave-s.png");
-    background-repeat: repeat-x;
+    position: absolute;
     bottom: 0;
     left: -8px;
+
     width: 110%;
     height: 6px;
 
+    background-image: url("../img/background/pattern-wave-s.png");
+    background-repeat: repeat-x;
+
     @media (min-width: $tablet-width) {
-      position: absolute;
       content: "";
-      background-image: url("../img/background/pattern-wave-m.png");
-      background-repeat: repeat-x;
+      position: absolute;
       bottom: 0;
       left: -22px;
+
       width: 110%;
       height: 17px;
+
+      background-image: url("../img/background/pattern-wave-m.png");
+      background-repeat: repeat-x;
     }
 
     @media (min-width: $desktop-width) {
-      position: absolute;
       content: "";
-      background-image: url("../img/background/pattern-wave-l.png");
-      background-repeat: repeat-x;
-      max-width: 1050px;
-      width: 100%;
+      position: absolute;
       bottom: 0;
       left: 0;
+
+      width: 100%;
+      max-width: 1050px;
       height: 25px;
+
+      background-image: url("../img/background/pattern-wave-l.png");
+      background-repeat: repeat-x;
       transform: rotate(180deg);
     }
   }
@@ -54,19 +63,20 @@
 
 .week-product__title-wrapper {
   @media (min-width: $tablet-width) {
-    margin-bottom: 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 61px;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
     position: absolute;
     top: 134px;
     left: 0;
+
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: 61px;
   }
 }
 
@@ -80,14 +90,16 @@
 
 .week-product__subtitle {
   margin: 0 0 18px 0;
+
   font-weight: 700;
   line-height: 20px;
   color: $color-downy;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: -4px 13px 0 0;
     max-width: 100px;
+    margin: -4px 13px 0 0;
+
     line-height: 17px;
     text-align: center;
   }
@@ -100,13 +112,15 @@
 .week-product__content-wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
     max-width: 670px;
     margin: 0 auto;
+
+    grid-template-columns: repeat(2, 50%);
   }
 
   @media (min-width: $desktop-width) {
-    max-width: none;
+    grid-template-columns: 470px 1fr;
+    max-width: 100%;
   }
 }
 
@@ -124,14 +138,16 @@
 }
 
 .week-product__text {
-  margin: 0 auto 28px auto;
   max-width: 260px;
+  margin: 0 auto 28px auto;
+
   font-size: 15px;
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 48px 0;
     max-width: 292px;
+    margin: 0 0 48px 0;
+
     font-size: 17px;
     line-height: 30px;
   }
@@ -142,24 +158,28 @@
 }
 
 .week-product__list {
-  margin: 0 auto;
+  display: grid;
   max-width: 260px;
+  margin: 0 auto;
+
   font-size: 15px;
   line-height: 20px;
-  display: grid;
+
   gap: 7px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     max-width: 292px;
+    margin: 0;
   }
 }
 
 .week-product__item {
-  padding-bottom: 12px;
   display: grid;
-  grid-template-columns: 97px 159px;
+  padding-bottom: 12px;
+
   border-bottom: 1px solid $color-whisper;
+
+  grid-template-columns: 97px 159px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 12px;
@@ -171,10 +191,10 @@
 }
 
 .week-product__image {
-  margin: 0 auto 26px auto;
   display: block;
   width: 260px;
   height: 315px;
+  margin: 0 auto 26px auto;
 
   @media (min-width: $tablet-width) {
     width: 334px;
@@ -189,12 +209,13 @@
 
 .week-product__image-wrapper {
   @media (min-width: $tablet-width) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
     margin-bottom: 0;
     padding-top: 12px;
+
+    grid-column-end: 3;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-row-start: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -210,12 +231,14 @@
 
 .week-product__price {
   margin: 0;
+
   font-weight: 700;
   line-height: 24px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     margin-left: 71px;
+
     font-size: 20px;
     text-align: left;
   }
@@ -227,11 +250,13 @@
 
 .week-product__button {
   margin: 24px auto 0 auto;
+
   font-size: 18px;
 
   @media (min-width: $tablet-width) {
-    margin: 32px 0 0 0;
     width: 292px;
+    margin: 32px 0 0 0;
+
     font-size: 17px;
   }
 }

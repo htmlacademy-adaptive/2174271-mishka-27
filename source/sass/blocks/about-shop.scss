@@ -17,27 +17,31 @@
 }
 
 .about-shop__list {
+  max-width: 260px;
   margin: 0 auto;
   padding: 0;
-  max-width: 260px;
+
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    margin-top: -13px;
-    max-width: 675px;
     display: grid;
-    grid-template-columns: 300px 300px;
+    max-width: 675px;
+    margin-top: -13px;
+
     gap: 0 35px;
+    grid-template-columns: 300px 300px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0 50px;
     max-width: none;
+
+    gap: 0 50px;
   }
 }
 
 .about-shop__item {
   padding-top: 83px;
+
   font-weight: 700;
   line-height: 20px;
   color: $color-default-black;
@@ -79,57 +83,64 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 110px;
     max-width: 300px;
+    padding-top: 110px;
+
     font-size: 20px;
     line-height: 22px;
 
     &--eco {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 2;
       background-position-y: 53px;
+
+      grid-column-end: 2;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-row-start: 1;
     }
 
     &--price {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 2;
-      grid-row-end: 3;
       background-position-y: 56px;
+
+      grid-column-end: 2;
+      grid-column-start: 1;
+      grid-row-end: 3;
+      grid-row-start: 2;
     }
 
     &--likes {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 3;
-      grid-row-end: 4;
       background-position-y: 62px;
+
+      grid-column-end: 2;
+      grid-column-start: 1;
+      grid-row-end: 4;
+      grid-row-start: 3;
     }
 
     &--handmade {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
       background-position-y: 57px;
+
+      grid-column-end: 3;
+      grid-column-start: 2;
+      grid-row-end: 2;
+      grid-row-start: 1;
     }
 
     &--local {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 3;
       background-position-y: 59px;
+
+      grid-column-end: 3;
+      grid-column-start: 2;
+      grid-row-end: 3;
+      grid-row-start: 2;
     }
 
     &--packaging {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 3;
-      grid-row-end: 4;
       background-position-y: 58px;
+
+      grid-column-end: 3;
+      grid-column-start: 2;
+      grid-row-end: 4;
+      grid-row-start: 3;
     }
   }
 }

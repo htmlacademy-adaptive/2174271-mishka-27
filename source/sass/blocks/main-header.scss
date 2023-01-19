@@ -78,7 +78,7 @@
   height: 20px;
 
   background-color: $color-transparent;
-  background-image: url('../img/svg/hamburger.svg');
+  background-image: url("../img/svg/hamburger.svg");
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
@@ -93,7 +93,8 @@
 
   &--open {
     top: 29px;
-    background-image: url('../img/svg/cross.svg');
+
+    background-image: url("../img/svg/cross.svg");
   }
 
   &:hover {
@@ -109,21 +110,22 @@
   display: none;
 
   grid-template-areas:
-    'site-nav'
-    'user-nav';
+    "site-nav"
+    "user-nav";
 
   @media (min-width: $tablet-width) {
     display: grid;
+
     grid-template-areas:
-      'user-nav user-nav'
-      'site-nav delivery-text';
+      "user-nav user-nav"
+      "site-nav delivery-text";
     grid-template-columns: 48% 52%;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-areas:
-      'site-nav user-nav'
-      'news-nav delivery-text';
+      "site-nav user-nav"
+      "news-nav delivery-text";
   }
 
   .no-js & {
@@ -134,8 +136,9 @@
     position: absolute;
     top: 80px;
     left: 0;
-    width: 100%;
+
     display: grid;
+    width: 100%;
 
     @media (min-width: $tablet-width) {
       position: static;
@@ -159,14 +162,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 100px;
     display: grid;
+    padding-right: 100px;
+
     grid-template-columns: 185px auto;
   }
 }
 
 .main-header__site-nav::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100vw;
@@ -188,7 +192,7 @@
   border-bottom: 1px solid $color-whisper;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 37px 0 0;
+    padding: 17px 37px 0 0;
 
     border: none;
 
@@ -198,7 +202,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 34px 34px 0 0;
+    padding: 30px 34px 0 0;
 
     &:nth-child(odd) {
       border-right: 1px solid $color-whisper;
@@ -222,7 +226,7 @@
   display: block;
 
   font-weight: 700;
-  color: inherit;
+  color: $color-default-black;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
@@ -271,7 +275,7 @@
 }
 
 .main-header__user-nav::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100vw;
@@ -298,20 +302,19 @@
 
   @media (min-width: $tablet-width) {
     &--search {
-      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
+      min-width: 84px;
+      min-height: 89px;
+      padding: 0;
 
       border-right: 1px solid $color-whisper;
-
       border-left: 1px solid $color-whisper;
-      min-height: 89px;
-      min-width: 84px;
     }
 
     &--cart {
-      padding: 33px 0 30px 31px;
+      padding: 31px 0 26px 31px;
 
       border: none;
     }
@@ -326,12 +329,12 @@
 
 .main-header__user-link {
   position: relative;
-  display: block;
 
+  display: block;
   padding-left: 46px;
 
   font-weight: 700;
-  color: inherit;
+  color: $color-default-black;
 
   &--search {
     @media (min-width: $tablet-width) {
@@ -360,15 +363,17 @@
   @media (min-width: $tablet-width) {
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
   }
 
   &--cart {
     top: 2px;
     left: 0;
-    transform: none;
 
     width: 21px;
+
+    transform: none;
 
     @media (min-width: $tablet-width) {
       margin-right: 30px;
@@ -422,6 +427,10 @@
   &:nth-child(even) {
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+  }
 }
 
 .main-header__news-link {
@@ -429,7 +438,7 @@
 
   font-weight: 700;
   font-size: 15px;
-  color: inherit;
+  color: $color-default-black;
 
   &:hover {
     opacity: 60%;
@@ -451,7 +460,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding: 20px 0 20px 50px;
+    padding: 17px 0 20px 50px;
 
     text-align: right;
   }

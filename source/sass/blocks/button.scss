@@ -1,27 +1,31 @@
 .button {
+  display: block;
+  width: 260px;
   margin: 0;
   padding: 14px;
-  width: 260px;
-  font-family: inherit;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-family: inherit;
   text-align: center;
-  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    font-size: 17px 32px;
     width: 230px;
+
+    font-size: 17px 32px;
   }
 
   &--primary {
     color: $color-charcoal;
+
     border: 2px solid $color-charcoal;
 
     &:hover {
       color: $color-default-white;
+
       background-color: $color-charcoal;
       border: 2px solid $color-charcoal;
     }
@@ -33,6 +37,7 @@
 
   &--secondary {
     color: $color-default-white;
+
     background-color: $color-downy;
     border: none;
 
