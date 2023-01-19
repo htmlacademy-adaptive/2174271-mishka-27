@@ -1,45 +1,52 @@
 .form-header {
-  padding: 74px 30px;
-  background-color: $color-white-smoke;
   position: relative;
+
+  padding: 74px 30px;
+
+  background-color: $color-white-smoke;
 
   @media (min-width: $tablet-width) {
     padding: 36px 50px 72px 50px;
 
     &::before {
-      position: absolute;
       content: "";
-      background-image: url("../img/svg/pattern-tablet.svg");
-      background-repeat: repeat-x;
+      position: absolute;
       bottom: -14px;
       left: 0;
+
       width: 100%;
       height: 24px;
+
+      background-image: url("../img/svg/pattern-tablet.svg");
+      background-repeat: repeat-x;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 50px 92px 50px;
+    padding: 34px 50px 92px 50px;
 
     &::before {
-      position: absolute;
       content: "";
-      background-image: url("../img/svg/pattern-desktop.svg");
-      background-repeat: repeat-x;
+      position: absolute;
       bottom: -20px;
       left: -6px;
+
       width: 100%;
       height: 34px;
+
+      background-image: url("../img/svg/pattern-desktop.svg");
+      background-repeat: repeat-x;
     }
   }
 }
 
 .form-header__title {
   margin: 0;
+
   font-weight: 700;
   font-size: 27px;
-  color: $color-default-black;
   text-align: center;
+  color: $color-default-black;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;

@@ -3,8 +3,9 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 334px 335px;
     min-height: 334px;
+
+    grid-template-columns: 334px 335px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,14 +15,16 @@
 }
 
 .card__content {
+  position: relative;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 260px;
   padding: 27px;
   padding-bottom: 24px;
-  width: 260px;
+
   border: 1px solid $color-whisper;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
 
   &::after {
     content: "";
@@ -29,8 +32,10 @@
     right: 28px;
     bottom: 72px;
     left: 28px;
+
     width: auto;
     height: 1px;
+
     background-color: $color-whisper;
   }
 
@@ -43,8 +48,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 27px 39px 24px 33px;
     width: 335px;
+    padding: 27px 39px 24px 33px;
 
     &::after {
       right: 33px;
@@ -54,8 +59,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 29px 26px 24px 27px;
     width: 100%;
+    padding: 29px 26px 24px 27px;
 
     &::after {
       right: 33px;
@@ -94,6 +99,7 @@
 
 .card__title {
   margin: 0 0 5px 0;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -108,9 +114,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 7px;
-    font-size: 20px;
     max-width: 230px;
+    margin-bottom: 7px;
+
+    font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,6 +127,7 @@
 
 .card__text {
   margin: 0;
+
   font-size: 13px;
 
   @media (min-width: $tablet-width) {
@@ -128,13 +136,14 @@
 }
 
 .card__buy {
-  margin-top: auto;
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .card__price {
   margin: 0;
+
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
@@ -147,26 +156,30 @@
 
 .card__button {
   position: relative;
+
   line-height: 0;
 }
 
 .card__button-image {
   color: $color-default-black;
+
   opacity: 20%;
 
   &:hover {
     color: $color-downy;
+
     opacity: 100%;
   }
 
   &:active {
     color: $color-downy;
+
     opacity: 30%;
   }
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     content: "";
+    position: absolute;
     top: 0;
     right: -7px;
   }

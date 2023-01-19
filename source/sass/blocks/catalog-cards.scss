@@ -1,8 +1,9 @@
 .catalog-cards {
-  padding: 30px;
   display: grid;
   justify-content: stretch;
   margin: 0;
+  padding: 30px;
+
   list-style-type: none;
 
   @media (min-width: $vp-768) {
@@ -17,8 +18,8 @@
 .catalog-cards__list {
   margin: 0 auto;
   padding: 0 30px;
-  list-style: none;
 
+  list-style: none;
 
   @media (min-width: $vp-768) {
     justify-content: center;
@@ -27,30 +28,30 @@
   @media (min-width: $vp-1150) {
     display: flex;
     justify-content: space-between;
-    grid-template-columns: repeat(3,316px);
-    row-gap: 50px;
+
     gap: 50px;
+    grid-template-columns: repeat(3, 316px);
+    row-gap: 50px;
   }
 }
 
 .catalog-cards__item {
+  display: grid;
   min-width: 260px;
   margin: 0 auto;
-  display: grid;
-
 
   @media (min-width: $vp-768) {
     max-width: 668px;
     margin-bottom: 54px;
+
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $vp-1150) {
-    max-width: 668px;
-    margin-bottom: 54px;
     display: flex;
     flex-direction: column;
-
+    max-width: 668px;
+    margin-bottom: 54px;
   }
 }
 
@@ -59,26 +60,24 @@
   padding-bottom: 32px;
 }
 
-
 .catalog-cards__info {
-  font-family: $ff-open-sans;
+  display: flex;
+  align-items: center;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-
-  display: flex;
-  align-items: center;
-
+  font-family: $ff-open-sans;
   color: $color-default-black;
+  text-decoration: none;
 
   mix-blend-mode: normal;
-  text-decoration: none;
 }
 
 .catalog-cards__wrapper {
   margin-bottom: 30px;
   padding: 28px 32px 0 28px;
+
   border: 1px solid $color-whisper;
 
   @media (min-width: $vp-768) {
@@ -88,42 +87,37 @@
 
 .catalog-cards__product {
   padding-bottom: 17px;
+
   border-bottom: 1px solid $color-whisper;
 }
 
 .catalog-cards__description {
-  font-family: $ff-open-sans;
+  display: flex;
+  align-items: center;
 
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
-
-  display: flex;
-  align-items: center;
-
+  font-family: $ff-open-sans;
   color: $color-charcoal;
 
   mix-blend-mode: normal;
 }
 
 .catalog-cards__price-value {
-  font-family: $ff-open-sans;
+  display: flex;
+  align-items: center;
 
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
-
-  display: flex;
-  align-items: center;
-
+  font-family: $ff-open-sans;
   color: $color-default-black;
 
   mix-blend-mode: normal;
 }
 
-
 .catalog-cards__image {
   width: 100%;
   height: 100%;
 }
-
